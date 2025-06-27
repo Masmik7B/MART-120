@@ -1,4 +1,4 @@
-# MART-120
+# MART-120 Homework 1
 Graphical user interface and command line interface are two ways to interact with computers. Graphical user interface is much more commonly used
 and relies on more visual components in its operation. For example, visual icons like folders, icons, and other interactive elements are seen while
 using GUIs. On the other hand command line interface is text based, and is often used by more advanced users. This relies on text commands being

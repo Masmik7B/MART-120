@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(142, 208, 246);
+    background-image: url('https://greatlakesmuseum.ca/wp-content/uploads/The_Wreck_of_the_Edmund_Fitzgerald.jpg');
+    background-blend-mode:luminosity;
+}
+
+.content{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    color:rgb(249, 80, 80);
+}
+
+.title
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color:rgb(153, 48, 48);
+}
+
+#home{
+    color:rgb(138, 138, 214);
+}
+
+#contact{
+    color:rgb(50, 118, 118);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 650;
+}

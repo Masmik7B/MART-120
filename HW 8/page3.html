@@ -1,0 +1,63 @@
+<html>
+    <title> Third Page </title>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            function checkboxes()
+            {
+                var firstName = document.getElementById("fName").value;
+                if(firstName == "")
+                {
+                    document.getElementById("fName").focus();
+                    document.getElementById("fName").style.backgroundColor = "red";
+                    document.getElementById("fNameMessage").innerHTML = "* Required";
+                    
+                    return false;
+                }
+                var lastName = document.getElementById("lName").value;
+                if(lastName == "")
+                {
+                    document.getElementById("lName").focus();
+                    document.getElementById("lName").style.backgroundColor = "red";
+                    document.getElementById("lNameMessage").innerHTML = "* Required";
+
+                return false;
+                }
+                var email = document.getElementById("Email").value;
+                if(email == "")
+                {
+                    document.getElementById("Email").focus();
+                    document.getElementById("Email").style.backgroundColor = "red";
+                    document.getElementById("EmailMessage").innerHTML = "* Required";
+
+                return false;
+                }
+                var terms = document.querySelector('input[name="terms"]:checked');
+                if(!terms)
+                {
+                    document.getElementById("TermsMessage").innerHTML = "* Please accept the terms.";
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Contact Us</h1>
+        <p></p>
+        <form onsubmit="return checkboxes();">
+            <p>First Name: <input type="text" id="fName"> <span id="fNameMessage" style="color:rgb(181, 11, 11);"></span></p>
+            <p>Last Name: <input type="text" id="lName"> <span id="lNameMessage" style="color:rgb(180, 18, 18);"></span></p>
+            <p>Email: <input type="text" id="Email"> <span id="EmailMessage" style="color:rgb(181, 25, 25);"></span></p>
+            <h3>Accept Terms of Agreement:</h3>
+            <input type="radio" name="terms" value="Yes"> Yes<br>
+            <input type="radio" name="terms" value="No"> No<br>
+            <span id="TermsMessage" style="color:rgb(151, 3, 3);"></span><br><br>
+            <button type="submit" class="btn btn-primary">Submit My Info</button>
+        </form>
+        <p><a href="Homepage.html">Go to the Home Page</a></p>
+        <p><a href="page2.html">Go to the Short Story</a></p>
+    </body>
+</html>
